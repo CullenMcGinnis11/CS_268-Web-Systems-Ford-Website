@@ -10,6 +10,12 @@ body {
     line-height: 1.6;
 }
 
+/* darken navbar section on hover */
+.flex-container a:hover {
+    background-color: #081534;
+    color: white;
+}
+
 /* title at the top of each page */
 header {
     /** coloring and alignment */

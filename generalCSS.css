@@ -1,0 +1,46 @@
+/* navbar used by every html file */
+/* #region NAVBAR */
+.flex-container {
+    /* navbar sections next to eachother */
+    display: flex;
+
+    flex-direction: row;
+
+    /* wrap to new row when space i slimited */
+    flex-wrap: wrap;
+
+    /* centers navbar sections */
+    justify-content: center;
+
+    /* narbar color */
+    background-color: #133A7C;
+}
+
+/* each navbar section */
+.flex-container div {
+    /* sections share availabel space */
+    flex: 1;
+
+    /* centered text */
+    text-align: center;
+}
+
+/* navbar links */
+.flex-container a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+/*#endregion*/
+
+/* default style for the entire page */
+body {
+    /** basic page colors and font */
+    margin: 0;
+    background-color: #f4f2ed;
+    color: #203545;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
