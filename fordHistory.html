@@ -1,13 +1,161 @@
 <html>
-    <head>
-        <style>
+<head>
+    <title>FORD History</title>
 
-        </style>
-        <title>
-            FORD History
-        </title>
-    </head>
-    <body>
-        
-    </body>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* NAVBAR */
+        .flex-container{
+            display: flex;
+            background-color: #133A7C;
+            flex-direction: row;
+        }
+
+        .flex-container div{
+            width: 100%;
+            height: 5vh;
+            text-align: center;
+        }
+
+        .flex-container a{
+            text-decoration: none;
+            color: #C6C6C6;
+            padding: 4px;
+            border-radius: 7px;
+        }
+
+        .flex-container a:hover{
+            background-color: #081534;
+        }
+
+        /* PAGE HEADER */
+        .hero{
+            background-color: #00274d;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* MAIN CONTENT */
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+
+        .section{
+            background-color: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .timeline{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .timeline-box{
+            width: 22%;
+            background-color: #d9d9d9;
+            padding: 15px;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        footer{
+            margin-top: 30px;
+            text-align: center;
+            background-color: #133A7C;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="flex-container">
+        <div><a href="homePage.html">FORD HOME</a></div>
+        <div><a href="trucks.html">FORD Truck</a></div>
+        <div><a href="sedan.html">FORD Sedan</a></div>
+        <div><a href="sportCars.html">FORD Sport</a></div>
+        <div><a href="SUV.html">FORD SUV</a></div>
+        <div><a href="vans.html">FORD Haul</a></div>
+        <div>electric_hybrid.htmlFORD Electric</a></div>
+        <div><a href="commercial.html">FORD Commercial</a></div>
+        <div><a href="orderingForm.html">FORD Order</a></div>
+        <div><a href="fordHistory.html">FORD History</a></div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1>Ford Motor Company History</h1>
+        <p>Over 100 years of innovation and automotive excellence</p>
+    </div>
+
+    <div class="container">
+
+        <!-- TIMELINE -->
+        <div class="section">
+            <h2>Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-box">
+                    <h3>1903</h3>
+                    <p>Ford Founded</p>
+                </div>
+
+                <div class="timeline-box">
+                    <h3>1908</h3>
+                    <p>Model T Released</p>
+                </div>
+
+                <div class="timeline-box">
+                    <h3>1948</h3>
+                    <p>First F-Series Truck</p>
+                </div>
+
+                <div class="timeline-box">
+                    <h3>1964</h3>
+                    <p>Mustang Introduced</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAMOUS VEHICLES -->
+        <div class="section">
+            <h2>Iconic Ford Vehicles</h2>
+
+            <p>[Image of Model T]</p>
+            <p>[Image of Mustang]</p>
+            <p>[Image of F-150]</p>
+        </div>
+
+        <!-- COMPANY MILESTONES -->
+        <div class="section">
+            <h2>Company Milestones</h2>
+
+            <ul>
+                <li>Founded by Henry Ford</li>
+                <li>Introduced assembly-line production</li>
+                <li>Created the Mustang</li>
+                <li>Expanded into electric vehicles</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Ford History Page Project
+    </footer>
+
+</body>
 </html>
