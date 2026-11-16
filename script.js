@@ -1,14 +1,14 @@
-// Wait until the order form has loaded.
+// Wait until the order form has loaded
 document.addEventListener("DOMContentLoaded", function () {
 
     var form = document.getElementById("orderForm");
 
-    // Stop here if this page does not have an order form.
+    // return if page doesn't have ordering form
     if (!form) {
         return;
     }
 
-    // Select the model that the visitor clicked on the vehicle page.
+    // Select the model that the visitor clicked on the vehicle page
     var model = new URLSearchParams(window.location.search).get("model");
 
     if (model) {
