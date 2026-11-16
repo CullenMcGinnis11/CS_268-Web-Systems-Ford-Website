@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var vehicle = document.getElementById("vehicle").value;
         var message = document.getElementById("orderMessage");
 
-        message.textContent = "Your sample request for the " + vehicle +
-            " is ready. This is a classroom demo, so no information was sent.";
+        message.textContent = "Submitted an order for " + vehicle +
+            ".\nWe will contact you when it is ready.";
     });
 
     // Remove the message when the visitor clears the form.
