@@ -1,129 +1,123 @@
-<html>
-  <head>
-    <!-- link to general css file-->
-    <link rel="stylesheet" href="/css/generalCSS.css" />
-    <link rel="stylesheet" href="/css/historyPage.css" />
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- tab title-->
-    <title>FORD History</title>
+<head>
+    <!-- information about this page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      .vehicle-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
+    <title>Ford History</title>
 
-      .vehicle-row {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
+    <!-- website CSS files -->
+    <link rel="stylesheet" href="generalCSS.css">
+    <link rel="stylesheet" href="vehiclePages.css">
+    <link rel="stylesheet" href="otherPages.css">
+</head>
 
-      .vehicle-row img {
-        flex: 1 1 0;
-        min-width: 0;
-        max-width: 100%;
-        height: auto;
-      }
+<body>
 
-      .vehicle-row p {
-        flex: 2 1 0;
-        min-width: 0;
-      }
-
-      @media (max-width: 600px) {
-        .vehicle-row {
-          flex-direction: column;
-          align-items: stretch;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
     <!-- NAVBAR -->
     <div class="flex-container">
-      <div><a class="navBarLink" href="homePage.html">FORD HOME</a></div>
-      <div><a class="navBarLink" href="trucks.html">FORD Truck</a></div>
-      <div><a href="sedan.html">FORD Sedan</a></div>
-      <div><a href="sportCars.html">FORD Sport</a></div>
-      <div><a href="SUV.html">FORD SUV</a></div>
-      <div><a href="haulingVehicles.html">FORD Haul</a></div>
-      <div><a href="electricVehicles.html">FORD Electric</a></div>
-      <div><a href="commericalVehicles.html">FORD Commerical</a></div>
-      <div><a href="orderingForm.html">FORD Order</a></div>
-      <div><a href="fordHistory.html">FORD History</a></div>
+        <div><a href="homePage.html">FORD HOME</a></div>
+        <div><a href="trucks.html">FORD Truck</a></div>
+        <div><a href="sedan.html">FORD Sedan</a></div>
+        <div><a href="sportCars.html">FORD Sport</a></div>
+        <div><a href="SUV.html">FORD SUV</a></div>
+        <div><a href="haulingVehicles.html">FORD Haul</a></div>
+        <div><a href="electricVehicles.html">FORD Electric</a></div>
+        <div><a href="commericalVehicles.html">FORD Commerical</a></div>
+        <div><a href="orderingForm.html">FORD Order</a></div>
+        <div><a href="fordHistory.html">FORD History</a></div>
     </div>
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-      <h1>Ford Motor Company History</h1>
-      <p>Over 100 years of innovation and automotive excellence</p>
-    </div>
+    <!-- page header -->
+    <header>
+        <h1>Ford Motor Company History</h1>
+        <p>A short look at some important moments in Ford's history.</p>
+    </header>
 
-    <div class="container">
-      <!-- TIMELINE -->
-      <div class="section">
-        <h2>Timeline</h2>
+    <!-- main page content -->
+    <main>
 
-        <div class="timeline">
-          <div class="timeline-box">
-            <h3>1903</h3>
-            <p>Ford Founded</p>
-          </div>
+        <!-- important dates -->
+        <h2>Ford Timeline</h2>
 
-          <div class="timeline-box">
-            <h3>1908</h3>
-            <p>Model T Released</p>
-          </div>
-
-          <div class="timeline-box">
-            <h3>1948</h3>
-            <p>First F-Series Truck</p>
-          </div>
-
-          <div class="timeline-box">
-            <h3>1964</h3>
-            <p>Mustang Introduced</p>
-          </div>
+        <div class="car">
+            <h2>1903 - Ford Motor Company Founded</h2>
+            <p>Henry Ford and a group of investors founded Ford Motor Company in Detroit, Michigan.</p>
         </div>
-      </div>
 
-      <!-- FAMOUS VEHICLES -->
-      <div class="section">
-        <h2>Iconic Ford Vehicles</h2>
-
-        <div class="vehicle-list">
-          <div class="vehicle-row">
-            <img src="/img/model_T_ford.webp" alt="Ford Model T" />
-            <p>Ford Model T was the first mass produced car</p>
-          </div>
-
-          <div class="vehicle-row">
-            <img src="/img/1970-ford-mustang.jpg" alt="1970 Ford Mustang" />
-            <p>Ford Mustang was a staple luxury car</p>
-          </div>
-
-          <div class="vehicle-row">
-            <img src="/img/ford_f150.avif" alt="Ford F-150" />
-            <p>Ford F-150 is the most popular american truck today</p>
-          </div>
+        <div class="car">
+            <h2>1908 - Model T Released</h2>
+            <p>The Model T became famous for making cars more affordable to many Americans.</p>
         </div>
-      </div>
-      <!-- COMPANY MILESTONES -->
-      <div class="section">
-        <h2>Company Milestones</h2>
 
-        <ul>
-          <li>Founded by Henry Ford</li>
-          <li>Introduced assembly-line production</li>
-          <li>Created the Mustang</li>
-          <li>Expanded into electric vehicles</li>
-        </ul>
-      </div>
-    </div>
+        <div class="car">
+            <h2>1913 - Moving Assembly Line</h2>
+            <p>Ford introduced a moving assembly line, which made the production of vehicles faster.</p>
+        </div>
 
-    <footer>Ford History Page Project</footer>
-  </body>
+        <div class="car">
+            <h2>1948 - First F-Series Truck</h2>
+            <p>Ford introduced its first generation of F-Series trucks.</p>
+        </div>
+
+        <div class="car">
+            <h2>1964 - Mustang Introduced</h2>
+            <p>Ford introduced the Mustang, which would become one of its most recognizable cars.</p>
+        </div>
+
+        <!-- photos of famous Ford vehicles -->
+        <h2>Famous Ford Vehicles</h2>
+
+        <div class="history-photos">
+
+            <div class="car">
+                <h2>Ford Model T</h2>
+
+                <img src="photos/modelt.jpg" alt="Historic black and white photo of a Ford Model T">
+                <p class="small">Photo: <a href="https://commons.wikimedia.org/wiki/File:1910Ford-T.jpg">Harry Shipler</a> (public domain)</p>
+
+                <p>The Model T helped bring automobiles to more people.</p>
+            </div>
+
+            <div class="car">
+                <h2>Ford Mustang</h2>
+
+                <img src="photos/mustang.jpg" alt="Red Ford Mustang GT">
+                <p class="small">Photo: <a href="https://commons.wikimedia.org/wiki/File:2024_Ford_Mustang_5.0_GT_in_Race_Red%2C_front_left.jpg">Ethan Llamas</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</p>
+
+                <p>The Mustang is a well-known American sports car.</p>
+            </div>
+
+            <div class="car">
+                <h2>Ford F-150</h2>
+
+                <img src="photos/f150.jpg" alt="White Ford F-150 truck">
+                <p class="small">Photo: <a href="https://commons.wikimedia.org/wiki/File:2024_Ford_F-150_XLT_front_view.jpg">Deathpallie325</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>)</p>
+
+                <p>The F-Series is a major part of Ford's history with pickup trucks.</p>
+            </div>
+
+        </div>
+
+        <!-- company information -->
+        <div class="car">
+            <h2>Ford Today</h2>
+
+            <p>Ford continues to make trucks, SUVs, performance cars, and electric vehicles.</p>
+
+            <p>To see more information, visit the <a href="https://corporate.ford.com/about/history.html">official Ford history website</a>.</p>
+
+            <p><a class="button" href="homePage.html">Return to Home</a></p>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Ford Vehicle Showcase - CS 268 Student Project</p>
+    </footer>
+
+</body>
 </html>

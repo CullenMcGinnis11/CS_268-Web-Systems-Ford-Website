@@ -1,0 +1,67 @@
+/* Extra styles for the homepage, history page, and order form */
+
+/* Shows the vehicle categories next to each other */
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Makes the photos the same height on the homepage */
+.vehicle-grid img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Removes extra spacing at the bottom of the grid cards */
+.vehicle-grid .car {
+    margin-bottom: 0;
+}
+
+/* Shows historical photos in a row */
+.history-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.history-photos img {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Styles the fields on the order form */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aebbc5;
+    font-family: Arial, sans-serif;
+}
+
+/* Adds space between form buttons */
+.form-buttons {
+    margin-top: 20px;
+}
+
+/* Keeps the website readable on phones */
+@media (max-width: 700px) {
+    .vehicle-grid,
+    .history-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-grid img,
+    .history-photos img {
+        height: auto;
+    }
+}

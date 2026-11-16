@@ -15,10 +15,7 @@
     /* narbar color */
     background-color: #133A7C;
 }
-.flex-container a:hover {
-    background-color: #081534;
-    color: white;
-}
+
 /* each navbar section */
 .flex-container div {
     /* sections share availabel space */

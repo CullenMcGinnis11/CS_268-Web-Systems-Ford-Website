@@ -1,21 +1,140 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="/css/generalCSS.css">
-    <title>FORD Order</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ford Order Form</title>
+
+    <!-- CSS and JavaScript files -->
+    <link rel="stylesheet" href="generalCSS.css">
+    <link rel="stylesheet" href="vehiclePages.css">
+    <link rel="stylesheet" href="otherPages.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
     <div class="flex-container">
-      <div><a class="navBarLink" href="homePage.html">FORD HOME</a></div>
-      <div><a class="navBarLink" href="trucks.html">FORD Truck</a></div>
-      <div><a href="sedan.html">FORD Sedan</a></div>
-      <div><a href="sportCars.html">FORD Sport</a></div>
-      <div><a href="SUV.html">FORD SUV</a></div>
-      <div><a href="haulingVehicles.html">FORD Haul</a></div>
-      <div><a href="electricVehicles.html">FORD Electric</a></div>
-      <div><a href="commericalVehicles.html">FORD Commerical</a></div>
-      <div><a href="orderingForm.html">FORD Order</a></div>
-      <div><a href="fordHistory.html">FORD History</a></div>
+        <div><a href="homePage.html">FORD HOME</a></div>
+        <div><a href="trucks.html">FORD Truck</a></div>
+        <div><a href="sedan.html">FORD Sedan</a></div>
+        <div><a href="sportCars.html">FORD Sport</a></div>
+        <div><a href="SUV.html">FORD SUV</a></div>
+        <div><a href="haulingVehicles.html">FORD Haul</a></div>
+        <div><a href="electricVehicles.html">FORD Electric</a></div>
+        <div><a href="commericalVehicles.html">FORD Commerical</a></div>
+        <div><a href="orderingForm.html">FORD Order</a></div>
+        <div><a href="fordHistory.html">FORD History</a></div>
     </div>
-    <div class="orderHeader"></div>
-  </body>
+
+    <!-- page header -->
+    <header>
+        <h1>Ford Vehicle Order Form</h1>
+        <p>Fill out the form below to create a sample vehicle request.</p>
+    </header>
+
+    <!-- form contents -->
+    <main>
+
+        <div class="car">
+            <h2>Vehicle Information</h2>
+            <p>This is only a demonstration for the class. No actual order will be placed.</p>
+
+            <form id="orderForm">
+
+                <!-- vehicle selection -->
+                <label for="vehicle">Choose a Vehicle:</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="">Select one</option>
+
+                    <optgroup label="Trucks">
+                        <option value="Ford F-150">Ford F-150</option>
+                        <option value="Ford Ranger">Ford Ranger</option>
+                        <option value="Ford Maverick">Ford Maverick</option>
+                    </optgroup>
+
+                    <optgroup label="Sedans">
+                        <option value="Ford Fusion">Ford Fusion</option>
+                        <option value="Ford Taurus">Ford Taurus</option>
+                        <option value="Ford Focus">Ford Focus</option>
+                    </optgroup>
+
+                    <optgroup label="Sports Cars">
+                        <option value="Ford Mustang EcoBoost">Ford Mustang EcoBoost</option>
+                        <option value="Ford Mustang GT">Ford Mustang GT</option>
+                        <option value="Ford Mustang Dark Horse">Ford Mustang Dark Horse</option>
+                    </optgroup>
+
+                    <optgroup label="SUVs">
+                        <option value="Ford Bronco Sport">Ford Bronco Sport</option>
+                        <option value="Ford Explorer">Ford Explorer</option>
+                        <option value="Ford Bronco">Ford Bronco</option>
+                    </optgroup>
+
+                    <optgroup label="Hauling Vehicles">
+                        <option value="Ford F-250 Super Duty">Ford F-250 Super Duty</option>
+                        <option value="Ford F-350 Super Duty">Ford F-350 Super Duty</option>
+                        <option value="Ford F-450 Super Duty">Ford F-450 Super Duty</option>
+                    </optgroup>
+
+                    <optgroup label="Electric Vehicles">
+                        <option value="Ford Mustang Mach-E">Ford Mustang Mach-E</option>
+                        <option value="Ford F-150 Lightning">Ford F-150 Lightning</option>
+                        <option value="Ford E-Transit">Ford E-Transit</option>
+                    </optgroup>
+
+                    <optgroup label="Commercial Vehicles">
+                        <option value="Ford Transit Cargo Van">Ford Transit Cargo Van</option>
+                        <option value="Ford Transit Passenger Van">Ford Transit Passenger Van</option>
+                        <option value="Ford F-650">Ford F-650</option>
+                    </optgroup>
+                </select>
+
+                <!-- requested options -->
+                <label for="vehicleColor">Preferred Color:</label>
+                <input type="text" id="vehicleColor" name="vehicleColor" placeholder="Example: Blue">
+
+                <label for="trim">Preferred Trim:</label>
+                <input type="text" id="trim" name="trim" placeholder="Example: XLT">
+
+                <!-- contact information -->
+                <h2>Your Information</h2>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+
+                <!-- additional comments -->
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <!-- submit and reset buttons -->
+                <div class="form-buttons">
+                    <button class="button" type="submit">Review Request</button>
+                    <button class="button" type="reset">Clear Form</button>
+                </div>
+
+            </form>
+
+            <!-- JavaScript will show a message here -->
+            <p id="orderMessage" aria-live="polite"></p>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Ford Vehicle Showcase - CS 268 Student Project</p>
+    </footer>
+
+</body>
 </html>
