@@ -1,66 +1,47 @@
 <html>
-<head>
+  <head>
     <!-- link to general css file-->
-    <link rel="stylesheet" href="generalCSS.css">
-    
+    <link rel="stylesheet" href="/css/generalCSS.css" />
+    <link rel="stylesheet" href="/css/historyPage.css" />
+
     <!-- tab title-->
     <title>FORD History</title>
 
     <style>
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
+      .vehicle-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
 
-        /* PAGE HEADER */
-        .hero{
-            background-color: #00274d;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
+      .vehicle-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
 
-        /* MAIN CONTENT */
-        .container{
-            width: 90%;
-            margin: auto;
-        }
+      .vehicle-row img {
+        flex: 1 1 0;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+      }
 
-        .section{
-            background-color: white;
-            margin-top: 20px;
-            padding: 20px;
-            border-radius: 10px;
-        }
+      .vehicle-row p {
+        flex: 2 1 0;
+        min-width: 0;
+      }
 
-        .timeline{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+      @media (max-width: 600px) {
+        .vehicle-row {
+          flex-direction: column;
+          align-items: stretch;
         }
-
-        .timeline-box{
-            width: 22%;
-            background-color: #d9d9d9;
-            padding: 15px;
-            margin-top: 10px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        footer{
-            margin-top: 30px;
-            text-align: center;
-            background-color: #133A7C;
-            color: white;
-            padding: 15px;
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- NAVBAR -->
     <div class="flex-container">
       <div><a class="navBarLink" href="homePage.html">FORD HOME</a></div>
@@ -77,65 +58,72 @@
 
     <!-- HERO SECTION -->
     <div class="hero">
-        <h1>Ford Motor Company History</h1>
-        <p>Over 100 years of innovation and automotive excellence</p>
+      <h1>Ford Motor Company History</h1>
+      <p>Over 100 years of innovation and automotive excellence</p>
     </div>
 
     <div class="container">
+      <!-- TIMELINE -->
+      <div class="section">
+        <h2>Timeline</h2>
 
-        <!-- TIMELINE -->
-        <div class="section">
-            <h2>Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-box">
+            <h3>1903</h3>
+            <p>Ford Founded</p>
+          </div>
 
-            <div class="timeline">
-                <div class="timeline-box">
-                    <h3>1903</h3>
-                    <p>Ford Founded</p>
-                </div>
+          <div class="timeline-box">
+            <h3>1908</h3>
+            <p>Model T Released</p>
+          </div>
 
-                <div class="timeline-box">
-                    <h3>1908</h3>
-                    <p>Model T Released</p>
-                </div>
+          <div class="timeline-box">
+            <h3>1948</h3>
+            <p>First F-Series Truck</p>
+          </div>
 
-                <div class="timeline-box">
-                    <h3>1948</h3>
-                    <p>First F-Series Truck</p>
-                </div>
-
-                <div class="timeline-box">
-                    <h3>1964</h3>
-                    <p>Mustang Introduced</p>
-                </div>
-            </div>
+          <div class="timeline-box">
+            <h3>1964</h3>
+            <p>Mustang Introduced</p>
+          </div>
         </div>
+      </div>
 
-        <!-- FAMOUS VEHICLES -->
-        <div class="section">
-            <h2>Iconic Ford Vehicles</h2>
+      <!-- FAMOUS VEHICLES -->
+      <div class="section">
+        <h2>Iconic Ford Vehicles</h2>
 
-            <p>[Image of Model T]</p>
-            <p>[Image of Mustang]</p>
-            <p>[Image of F-150]</p>
+        <div class="vehicle-list">
+          <div class="vehicle-row">
+            <img src="/img/model_T_ford.webp" alt="Ford Model T" />
+            <p>Ford Model T was the first mass produced car</p>
+          </div>
+
+          <div class="vehicle-row">
+            <img src="/img/1970-ford-mustang.jpg" alt="1970 Ford Mustang" />
+            <p>Ford Mustang was a staple luxury car</p>
+          </div>
+
+          <div class="vehicle-row">
+            <img src="/img/ford_f150.avif" alt="Ford F-150" />
+            <p>Ford F-150 is the most popular american truck today</p>
+          </div>
         </div>
+      </div>
+      <!-- COMPANY MILESTONES -->
+      <div class="section">
+        <h2>Company Milestones</h2>
 
-        <!-- COMPANY MILESTONES -->
-        <div class="section">
-            <h2>Company Milestones</h2>
-
-            <ul>
-                <li>Founded by Henry Ford</li>
-                <li>Introduced assembly-line production</li>
-                <li>Created the Mustang</li>
-                <li>Expanded into electric vehicles</li>
-            </ul>
-        </div>
-
+        <ul>
+          <li>Founded by Henry Ford</li>
+          <li>Introduced assembly-line production</li>
+          <li>Created the Mustang</li>
+          <li>Expanded into electric vehicles</li>
+        </ul>
+      </div>
     </div>
 
-    <footer>
-        Ford History Page Project
-    </footer>
-
-</body>
+    <footer>Ford History Page Project</footer>
+  </body>
 </html>

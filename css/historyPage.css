@@ -1,0 +1,49 @@
+body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* PAGE HEADER */
+        .hero{
+            background-color: #00274d;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* MAIN CONTENT */
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+
+        .section{
+            background-color: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .timeline{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .timeline-box{
+            width: 22%;
+            background-color: #d9d9d9;
+            padding: 15px;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        footer{
+            margin-top: 30px;
+            text-align: center;
+            background-color: #133A7C;
+            color: white;
+            padding: 15px;
+        }
